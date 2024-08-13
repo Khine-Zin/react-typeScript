@@ -7,6 +7,7 @@ interface Image {
 
 
 export interface Data {
+    id:number;
     image: Image;
     name: string;
     category: string;
@@ -16,10 +17,22 @@ export interface Data {
 }
 
 export interface MenuData{
+    id:number;
     image: Image;
     name: string;
     category: string;
     price: number;
     add:boolean;
+    quantity:number
+}
+
+export interface CartData{
+    id:number;
+    image: Image;
+    name: string;
+    category: string;
+    price: number;
+    add:boolean;
+    quantity:number
 }
 
